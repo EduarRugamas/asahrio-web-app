@@ -1,7 +1,7 @@
 import React from 'react';
 import './ComponentFiltersleft.css';
 import  algoliaSearch from 'algoliasearch/lite';
-import { InstantSearch, connectMenu, Menu } from 'react-instantsearch-dom';
+import { InstantSearch, connectMenu } from 'react-instantsearch-dom';
 
 const searchClient = algoliaSearch('VFM4X0N23A', 'd16d4804f78c38777368ea8ced79e56e');
 
@@ -38,7 +38,7 @@ export class ComponentFiltersleft extends React.Component {
 
                 <div className="product-categories">
                     <h6 className="text-uppercase mb-3">Categories</h6>
-                   <Menu attribute="category" />
+                   <CustomMenu attribute="category" />
                 </div>
 
                 <hr />
